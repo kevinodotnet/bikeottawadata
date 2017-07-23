@@ -4,6 +4,27 @@
 
     <p>Welcome to the BikeOttawa data project. Here we're getting down to the nuts and bolts of improving data about
       biking in Ottawa.</p>
-
   </div>
 </div>
+
+<div id="map" class="map" tabindex="0"></div>
+<script>
+
+    var map = new ol.Map({
+        layers: [
+            new ol.layer.Tile({
+                source: new ol.source.OSM()
+            })
+        ],
+        target: 'map',
+        controls: ol.control.defaults({
+            attributionOptions: /** @type {olx.control.AttributionOptions} */ ({
+                collapsible: false
+            })
+        }),
+        view: new ol.View({
+            center: ol.proj.fromLonLat([-75.738465024576, 45.360856015303]),
+            zoom: 15
+        })
+    });
+</script>
