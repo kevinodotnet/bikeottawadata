@@ -1,14 +1,23 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Bikeottawadata</title>
-    <%= csrf_meta_tags %>
+<head>
+  <title>Bikeottawadata</title>
+  <%= csrf_meta_tags %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+</head>
 
-  <body>
-    <%= yield %>
-  </body>
+<body>
+<%= yield %>
+<div id="#appfooter">
+<div class="row">
+  <div class="col-sm-8 offset-sm-2">
+    <%=
+      image_tag("2017_Bike_Ottawa_Masthead_line.png", class: 'img-fluid')
+    %>
+  </div>
+</div>
+</div>
+</body>
 </html>
