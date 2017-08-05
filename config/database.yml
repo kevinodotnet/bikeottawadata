@@ -11,10 +11,9 @@ default: &default
 
 development:
   <<: *default
+  adapter: sqlite3
   encoding: unicode
-  database: bikeottawadata
-  username: kevinodonnell
-  password:
+  database: db/development.sqlite3
 
 test:
   <<: *default
