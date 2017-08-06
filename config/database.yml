@@ -17,6 +17,9 @@ development:
 
 test:
   <<: *default
+  adapter: sqlite3
+  encoding: unicode
+  database: db/test.sqlite3
 
 production:
   <<: *default
