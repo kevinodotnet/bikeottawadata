@@ -1,2 +1,2 @@
-module OmniAuthCallbackHelper
+module OmniauthcallbackHelper
 end
